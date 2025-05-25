@@ -34,15 +34,10 @@ DELETE /tasks/:id: para eliminarla.
 
 Para probar la API puedes usar herramientas como curl. Por ejemplo, para registrar un usuario:
 
-bash
-Copiar
-Editar
+
 curl -X POST http://localhost:3000/auth/register -H "Content-Type: application/json" -d "{\"username\":\"ana\",\"password\":\"123456\"}"
 Y para hacer login:
 
-bash
-Copiar
-Editar
 curl -X POST http://localhost:3000/auth/login -H "Content-Type: application/json" -d "{\"username\":\"ana\",\"password\":\"123456\"}"
 Después de hacer login, puedes usar el token recibido para hacer peticiones protegidas como GET /auth/me o para crear tareas.
 
