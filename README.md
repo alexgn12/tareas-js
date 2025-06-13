@@ -1,4 +1,4 @@
-Este backend que has desarrollado con Node.js y Express es una API completa que permite a los usuarios registrarse, iniciar sesión y gestionar sus propias tareas. Usa MongoDB como base de datos, Mongoose como ODM, y JWT para la autenticación de usuarios. También incluye bcrypt para cifrado de contraseñas, y librerías como dotenv, morgan y cors para la configuración y los middlewares comunes.
+Este backend que se ha desarrollado con Node.js y Express, es una API completa que permite a los usuarios registrarse, iniciar sesión y gestionar sus propias tareas. Usa MongoDB como base de datos, Mongoose como ODM, y JWT para la autenticación de usuarios. También incluye bcrypt para cifrado de contraseñas, y librerías como dotenv, morgan y cors para la configuración y los middlewares comunes.
 
 Entre sus funcionalidades principales están:
 
@@ -41,6 +41,5 @@ Y para hacer login:
 curl -X POST http://localhost:3000/auth/login -H "Content-Type: application/json" -d "{\"username\":\"ana\",\"password\":\"123456\"}"
 Después de hacer login, puedes usar el token recibido para hacer peticiones protegidas como GET /auth/me o para crear tareas.
 
-Actualmente el backend tiene todas las funciones básicas implementadas y funcionando correctamente. Como pasos futuros puedes añadir validaciones más robustas con librerías como Joi, aplicar paginación en los listados, empezar con tests automatizados usando Jest y Supertest, desplegarlo en servicios como Render o Railway, o conectarlo a un frontend en React.
+Actualmente el backend tiene todas las funciones básicas implementadas y funcionando correctamente. Como pasos futuros se puede añadir validaciones más robustas con librerías como Joi, aplicar paginación en los listados, empezar con tests automatizados usando Jest y Supertest, desplegarlo en servicios como Render o Railway, o conectarlo a un frontend en React.
 
-El proyecto está bien organizado, funcional y listo para ser usado como base para mejorar tus conocimientos en desarrollo backend o para presentarlo en tu portfolio.
